@@ -8,7 +8,7 @@
       <link href="/2023/06/30/node-js-an-zhuang-xiang-jie/"/>
       <url>/2023/06/30/node-js-an-zhuang-xiang-jie/</url>
       
-        <content type="html"><![CDATA[<p>[TOC]</p><span id="more"></span><p>#Step1：下载安装包</p><p><a href="https://nodejs.org/zh-cn/download/">先进官网下个安装包</a></p><p><img src="/../img/nodejs%E5%AE%89%E8%A3%851.PNG" alt="官网"></p><p><a href="https://registry.npmmirror.com/binary.html?path=node/latest-v20.x/">或者从镜像站下（我也不知道为什么镜像站的版本竟然比官网的高，How amazing!）</a></p><p><img src="/../img/nodejs%E5%AE%89%E8%A3%852.PNG" alt="Windows版"></p><p><img src="/../img/nodejs%E5%AE%89%E8%A3%853.PNG" alt="Linux版"></p><p>##Step2：安装程序</p><p>###Step3：查看</p><p>####Step4：环境配置</p>]]></content>
+        <content type="html"><![CDATA[<h4><span id="step1下载安装包">Step1：下载安装包</span></h4><p><a href="https://nodejs.org/zh-cn/download/">先进官网下个安装包</a></p><p><img src="/../img/nodejs%E5%AE%89%E8%A3%851.PNG" alt="官网"></p><p><a href="https://registry.npmmirror.com/binary.html?path=node/latest-v20.x/">或者从镜像站下（我也不知道为什么镜像站的版本竟然比官网的高，How amazing!）</a></p><p><img src="/../img/nodejs%E5%AE%89%E8%A3%852.PNG" alt="Windows版"></p><p><img src="/../img/nodejs%E5%AE%89%E8%A3%853.PNG" alt="Linux版"></p><h4><span id="step2安装程序">Step2：安装程序</span></h4><h4><span id="step3查看">Step3：查看</span></h4><h4><span id="step4环境配置">Step4：环境配置</span></h4>]]></content>
       
       
       <categories>
