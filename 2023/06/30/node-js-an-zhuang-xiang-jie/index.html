@@ -444,29 +444,29 @@ Step2：安装程序1.下载完成后，双击安装包，开始安装Node.js
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4><span id="step1下载安装包">Step1：下载安装包</span></h4><p><a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/download/">先进官网下个安装包</a></p>
+                <h4 id="Step1：下载安装包"><a href="#Step1：下载安装包" class="headerlink" title="Step1：下载安装包"></a>Step1：下载安装包</h4><p><a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/download/">先进官网下个安装包</a></p>
 <span id="more"></span>
 
 <p><img src="/../img/nodejs%E5%AE%89%E8%A3%85/nodejs%E5%AE%89%E8%A3%851.PNG" alt="官网"></p>
 <p><a target="_blank" rel="noopener" href="https://registry.npmmirror.com/binary.html?path=node/latest-v20.x/">或者从镜像站下（我也不知道为什么镜像站的版本竟然比官网的高，How amazing!）</a></p>
 <p><img src="/../img/nodejs%E5%AE%89%E8%A3%85/nodejs%E5%AE%89%E8%A3%852.PNG" alt="Windows版"></p>
 <p><img src="/../img/nodejs%E5%AE%89%E8%A3%85/nodejs%E5%AE%89%E8%A3%853.PNG" alt="Linux版"></p>
-<h4><span id="step2安装程序">Step2：安装程序</span></h4><h5><span id="1下载完成后双击安装包开始安装nodejs">1.下载完成后，双击安装包，开始安装Node.js</span></h5><p><img src="/../img/nodejs%E5%AE%89%E8%A3%85/nodejs%E5%AE%89%E8%A3%854.PNG"></p>
+<h4 id="Step2：安装程序"><a href="#Step2：安装程序" class="headerlink" title="Step2：安装程序"></a>Step2：安装程序</h4><h5 id="1-下载完成后，双击安装包，开始安装Node-js"><a href="#1-下载完成后，双击安装包，开始安装Node-js" class="headerlink" title="1.下载完成后，双击安装包，开始安装Node.js"></a>1.下载完成后，双击安装包，开始安装Node.js</h5><p><img src="/../img/nodejs%E5%AE%89%E8%A3%85/nodejs%E5%AE%89%E8%A3%854.PNG"></p>
 <p>注：这中间应该还有一个设置安装路径的界面，但我已经安装过了，所以没有，可按照个人需求修改</p>
 <p><img src="/../img/nodejs%E5%AE%89%E8%A3%85/nodejs%E5%AE%89%E8%A3%855.PNG" alt="一路回车(&quot;next&quot;)"></p>
-<h5><span id="2按照个人需求决定是否选中一般不需要决定后点击next按钮">2.按照个人需求决定是否选中，一般不需要，决定后点击【Next】按钮</span></h5><p><img src="/../img/nodejs%E5%AE%89%E8%A3%85/nodejs%E5%AE%89%E8%A3%856.png"></p>
-<h5><span id="3点击install安装完成后点击finish">3.点击Install安装，完成后点击Finish</span></h5><h5><span id="4测试是否安装">4.测试是否安装</span></h5><p>按下【win+R】键，输入cmd，打开cmd窗口</p>
+<h5 id="2-按照个人需求决定是否选中，一般不需要，决定后点击【Next】按钮"><a href="#2-按照个人需求决定是否选中，一般不需要，决定后点击【Next】按钮" class="headerlink" title="2.按照个人需求决定是否选中，一般不需要，决定后点击【Next】按钮"></a>2.按照个人需求决定是否选中，一般不需要，决定后点击【Next】按钮</h5><p><img src="/../img/nodejs%E5%AE%89%E8%A3%85/nodejs%E5%AE%89%E8%A3%856.png"></p>
+<h5 id="3-点击Install安装，完成后点击Finish"><a href="#3-点击Install安装，完成后点击Finish" class="headerlink" title="3.点击Install安装，完成后点击Finish"></a>3.点击Install安装，完成后点击Finish</h5><h5 id="4-测试是否安装"><a href="#4-测试是否安装" class="headerlink" title="4.测试是否安装"></a>4.测试是否安装</h5><p>按下【win+R】键，输入cmd，打开cmd窗口</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">node</span> <span class="token parameter variable">-v</span>     // 显示node.js版本
 <span class="token function">npm</span> <span class="token parameter variable">-v</span>      // 显示npm版本<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h4><span id="step3测试和配置">Step3：测试和配置</span></h4><h5><span id="1npm安装测试">1.npm安装测试</span></h5><p>试试安装常用的express模块</p>
+<h4 id="Step3：测试和配置"><a href="#Step3：测试和配置" class="headerlink" title="Step3：测试和配置"></a>Step3：测试和配置</h4><h5 id="1-npm安装测试"><a href="#1-npm安装测试" class="headerlink" title="1.npm安装测试"></a>1.npm安装测试</h5><p>试试安装常用的express模块</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">// -g代表全局安装
 
 <span class="token function">npm</span> <span class="token function">install</span> express <span class="token parameter variable">-g</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <p><img src="/../img/nodejs%E5%AE%89%E8%A3%85/nodejs%E5%AE%89%E8%A3%857.png" alt="一般没出现ERR或者卡住的现象都是成功的（图为失败的界面）"></p>
 <p>成功的界面最新版只会显示“added n packages in n s.”（n为变量）</p>
-<h5><span id="2npm换源">2.npm换源</span></h5><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">// 安装镜像
+<h5 id="2-npm换源"><a href="#2-npm换源" class="headerlink" title="2.npm换源"></a>2.npm换源</h5><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">// 安装镜像
     <span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry https://registry.npm.taobao.org
 // 查看是否成功
     <span class="token function">npm</span> config get registry<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
