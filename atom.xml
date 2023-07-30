@@ -6,7 +6,7 @@
   <link href="http://bugs8.v6.army/atom.xml" rel="self"/>
   
   <link href="http://bugs8.v6.army/"/>
-  <updated>2023-07-30T03:26:27.801Z</updated>
+  <updated>2023-07-30T08:46:57.181Z</updated>
   <id>http://bugs8.v6.army/</id>
   
   <author>
@@ -21,10 +21,11 @@
     <link href="http://bugs8.v6.army/2023/07/30/quan-zhou-shu-jia-ji-xun-day-7/"/>
     <id>http://bugs8.v6.army/2023/07/30/quan-zhou-shu-jia-ji-xun-day-7/</id>
     <published>2023-07-30T00:30:00.000Z</published>
-    <updated>2023-07-30T03:26:27.801Z</updated>
+    <updated>2023-07-30T08:46:57.181Z</updated>
     
     
-    <summary type="html">&lt;p&gt;PS: This is a note.&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;PS: This is a note.&lt;/p&gt;
+&lt;h2 id=&quot;基本字符串的应用及相关算法&quot;&gt;&lt;a href=&quot;#基本字符串的应用及相关算法&quot; class=&quot;headerlink&quot; title=&quot;基本字符串的应用及相关算法&quot;&gt;&lt;/a&gt;基本字符串的应用及相关算法&lt;/h2&gt;</summary>
     
     
     
@@ -44,10 +45,11 @@
     <link href="http://bugs8.v6.army/2023/07/28/quan-zhou-shu-jia-ji-xun-day-5-6/"/>
     <id>http://bugs8.v6.army/2023/07/28/quan-zhou-shu-jia-ji-xun-day-5-6/</id>
     <published>2023-07-28T00:30:00.000Z</published>
-    <updated>2023-07-30T00:34:26.505Z</updated>
+    <updated>2023-07-30T08:46:56.434Z</updated>
     
     
-    <summary type="html">&lt;p&gt;PS: This is a note.&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;PS: This is a note.&lt;/p&gt;
+&lt;h2 id=&quot;深搜-DFS-和宽搜-BFS&quot;&gt;&lt;a href=&quot;#深搜-DFS-和宽搜-BFS&quot; class=&quot;headerlink&quot; title=&quot;深搜(DFS)和宽搜(BFS)&quot;&gt;&lt;/a&gt;深搜(DFS)和宽搜(BFS)&lt;/h2&gt;</summary>
     
     
     
@@ -67,10 +69,11 @@
     <link href="http://bugs8.v6.army/2023/07/26/quan-zhou-shu-jia-ji-xun-day-4/"/>
     <id>http://bugs8.v6.army/2023/07/26/quan-zhou-shu-jia-ji-xun-day-4/</id>
     <published>2023-07-26T00:30:00.000Z</published>
-    <updated>2023-07-30T00:34:29.576Z</updated>
+    <updated>2023-07-30T08:46:55.601Z</updated>
     
     
-    <summary type="html">&lt;p&gt;PS: This is a note.&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;PS: This is a note.&lt;/p&gt;
+&lt;h2 id=&quot;杂题选讲&quot;&gt;&lt;a href=&quot;#杂题选讲&quot; class=&quot;headerlink&quot; title=&quot;杂题选讲&quot;&gt;&lt;/a&gt;杂题选讲&lt;/h2&gt;</summary>
     
     
     
@@ -90,10 +93,11 @@
     <link href="http://bugs8.v6.army/2023/07/25/quan-zhou-shu-jia-ji-xun-day-3/"/>
     <id>http://bugs8.v6.army/2023/07/25/quan-zhou-shu-jia-ji-xun-day-3/</id>
     <published>2023-07-25T00:30:00.000Z</published>
-    <updated>2023-07-30T00:34:25.185Z</updated>
+    <updated>2023-07-30T08:46:54.657Z</updated>
     
     
-    <summary type="html">&lt;p&gt;PS: This is a note.&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;PS: This is a note.&lt;/p&gt;
+&lt;h2 id=&quot;动态规划-DP&quot;&gt;&lt;a href=&quot;#动态规划-DP&quot; class=&quot;headerlink&quot; title=&quot;动态规划(DP)&quot;&gt;&lt;/a&gt;动态规划(DP)&lt;/h2&gt;</summary>
     
     
     
