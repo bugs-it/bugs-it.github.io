@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Bugs-IT</title>
+  
+  <subtitle>Cola Pig&#39;s Blog</subtitle>
+  <link href="http://bugs8.v6.army/atom.xml" rel="self"/>
+  
+  <link href="http://bugs8.v6.army/"/>
+  <updated>2023-07-30T03:26:27.801Z</updated>
+  <id>http://bugs8.v6.army/</id>
+  
+  <author>
+    <name>Cola Pig</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>泉州暑假集训Day 7</title>
+    <link href="http://bugs8.v6.army/2023/07/30/quan-zhou-shu-jia-ji-xun-day-7/"/>
+    <id>http://bugs8.v6.army/2023/07/30/quan-zhou-shu-jia-ji-xun-day-7/</id>
+    <published>2023-07-30T00:30:00.000Z</published>
+    <updated>2023-07-30T03:26:27.801Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;PS: This is a note.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="编程语言" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="学习记录" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="c++" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/c/"/>
+    
+    
+    <category term="c++" scheme="http://bugs8.v6.army/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>泉州暑假集训Day 5 &amp;&amp; 6</title>
+    <link href="http://bugs8.v6.army/2023/07/28/quan-zhou-shu-jia-ji-xun-day-5-6/"/>
+    <id>http://bugs8.v6.army/2023/07/28/quan-zhou-shu-jia-ji-xun-day-5-6/</id>
+    <published>2023-07-28T00:30:00.000Z</published>
+    <updated>2023-07-30T00:34:26.505Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;PS: This is a note.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="编程语言" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="学习记录" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="c++" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/c/"/>
+    
+    
+    <category term="c++" scheme="http://bugs8.v6.army/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>泉州暑假集训Day 4</title>
+    <link href="http://bugs8.v6.army/2023/07/26/quan-zhou-shu-jia-ji-xun-day-4/"/>
+    <id>http://bugs8.v6.army/2023/07/26/quan-zhou-shu-jia-ji-xun-day-4/</id>
+    <published>2023-07-26T00:30:00.000Z</published>
+    <updated>2023-07-30T00:34:29.576Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;PS: This is a note.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="编程语言" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="学习记录" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="c++" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/c/"/>
+    
+    
+    <category term="c++" scheme="http://bugs8.v6.army/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>泉州暑假集训Day 3</title>
+    <link href="http://bugs8.v6.army/2023/07/25/quan-zhou-shu-jia-ji-xun-day-3/"/>
+    <id>http://bugs8.v6.army/2023/07/25/quan-zhou-shu-jia-ji-xun-day-3/</id>
+    <published>2023-07-25T00:30:00.000Z</published>
+    <updated>2023-07-30T00:34:25.185Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;PS: This is a note.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="编程语言" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="学习记录" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="c++" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/c/"/>
+    
+    
+    <category term="c++" scheme="http://bugs8.v6.army/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>泉州暑假集训Day 2</title>
+    <link href="http://bugs8.v6.army/2023/07/24/quan-zhou-shu-jia-ji-xun-day-2/"/>
+    <id>http://bugs8.v6.army/2023/07/24/quan-zhou-shu-jia-ji-xun-day-2/</id>
+    <published>2023-07-24T00:30:00.000Z</published>
+    <updated>2023-07-30T00:34:23.668Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;PS: This is a note.&lt;/p&gt;
+&lt;h2 id=&quot;栈&quot;&gt;&lt;a href=&quot;#栈&quot; class=&quot;headerlink&quot; title=&quot;栈&quot;&gt;&lt;/a&gt;栈&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="编程语言" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="学习记录" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="c++" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/c/"/>
+    
+    
+    <category term="c++" scheme="http://bugs8.v6.army/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>泉州暑假集训Day 1</title>
+    <link href="http://bugs8.v6.army/2023/07/23/quan-zhou-shu-jia-ji-xun-day-1/"/>
+    <id>http://bugs8.v6.army/2023/07/23/quan-zhou-shu-jia-ji-xun-day-1/</id>
+    <published>2023-07-23T00:30:00.000Z</published>
+    <updated>2023-07-24T01:09:57.116Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;PS: This is a note.&lt;/p&gt;
+&lt;h2 id=&quot;数据排序&quot;&gt;&lt;a href=&quot;#数据排序&quot; class=&quot;headerlink&quot; title=&quot;数据排序&quot;&gt;&lt;/a&gt;数据排序&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="编程语言" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="学习记录" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="c++" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/c/"/>
+    
+    
+    <category term="c++" scheme="http://bugs8.v6.army/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Node.js安装详解</title>
+    <link href="http://bugs8.v6.army/2023/06/30/node-js-an-zhuang-xiang-jie/"/>
+    <id>http://bugs8.v6.army/2023/06/30/node-js-an-zhuang-xiang-jie/</id>
+    <published>2023-06-30T10:07:53.000Z</published>
+    <updated>2023-07-23T00:28:15.492Z</updated>
+    
+    
+    <summary type="html">&lt;h4 id=&quot;Step1：下载安装包&quot;&gt;&lt;a href=&quot;#Step1：下载安装包&quot; class=&quot;headerlink&quot; title=&quot;Step1：下载安装包&quot;&gt;&lt;/a&gt;Step1：下载安装包&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;https://nodejs.org/zh-cn/download/&quot;&gt;先进官网下个安装包&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="编程语言" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="安装" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AE%89%E8%A3%85/"/>
+    
+    <category term="Node.js" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AE%89%E8%A3%85/Node-js/"/>
+    
+    
+    <category term="Node.js" scheme="http://bugs8.v6.army/tags/Node-js/"/>
+    
+    <category term="Hexo" scheme="http://bugs8.v6.army/tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>
