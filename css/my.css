@@ -1,10 +1,10 @@
 /* Here is your custom css styles. */
 
 @font-face{
-    font-family: 'tifont';
-    src: url('../font/tifont.ttf');
+    font-family: 'tfont';
+    src: url('../font/tfont.ttf');
 }
 
 .diyFont{
-    font-family: 'tifont';
+    font-family: 'tfont';
 }
