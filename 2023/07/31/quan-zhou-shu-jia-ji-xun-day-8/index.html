@@ -9,17 +9,13 @@
     <meta name="description" content="PS: This is a note.
 图论基础
 
-图的概念图的概念不容易讲清楚，可以看看这两位大佬的讲解
+图的概念偷懒一波~ :)
 segmentfault上某大佬的讲解
 知乎上某大佬的讲解
 补充:
 
-度
-dudu
-dd
-
-s
-">
+节点的度: 无向图中与节点相连的边的数目,称为节点的度
+节点的入度: 在有向图中,以这个节点">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -66,9 +62,9 @@ s
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 6.3.0">
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Bugs-IT" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="Bugs-IT" type="application/atom+xml">
 </head>
 
 
@@ -422,7 +418,7 @@ s
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    58
+                    346
                 </div>
                 
 
@@ -450,16 +446,58 @@ s
                 <p>PS: This is a note.</p>
 <h2 id="图论基础"><a href="#图论基础" class="headerlink" title="图论基础"></a>图论基础</h2><span id="more"></span>
 
-<h3 id="图的概念"><a href="#图的概念" class="headerlink" title="图的概念"></a>图的概念</h3><p>图的概念不容易讲清楚，可以看看这两位大佬的讲解</p>
+<h3 id="图的概念"><a href="#图的概念" class="headerlink" title="图的概念"></a>图的概念</h3><p>偷懒一波~ :)</p>
 <p><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000013223267">segmentfault上某大佬的讲解</a></p>
 <p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/135407927">知乎上某大佬的讲解</a></p>
 <p>补充:</p>
 <ul>
-<li>度</li>
-<li>dudu</li>
-<li>dd</li>
+<li>节点的度: 无向图中与节点相连的边的数目,称为节点的度</li>
+<li>节点的入度: 在有向图中,以这个节点为终点的有向边的数目</li>
+<li>节点的出度: 在有向图中,以这个节点为起点的有向边的数目</li>
 </ul>
-<p>s</p>
+<h3 id="邻接表"><a href="#邻接表" class="headerlink" title="邻接表"></a>邻接表</h3><h4 id="邻接表编码"><a href="#邻接表编码" class="headerlink" title="邻接表编码"></a>邻接表编码</h4><ol>
+<li>利用结构体+指针来实现(原始,不推荐)</li>
+<li>利用STL库vector+结构体来实现</li>
+</ol>
+<h4 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h4><ol>
+<li>结构体</li>
+<li>创建图<ol>
+<li>顶点和边数，顶点需要用一维数组保存</li>
+<li>获取顶点的下标，因为链接结点中的index域是顶点的下标值。</li>
+<li>创建结点，通过头插法(或尾插法)把结点链接到头结点的尾部</li>
+</ol>
+</li>
+<li>打印</li>
+</ol>
+<p>详细可见: <a target="_blank" rel="noopener" href="https://www.cnblogs.com/cmusketeer/">TMusketeer的博客</a></p>
+<h4 id="邻接表代码示例"><a href="#邻接表代码示例" class="headerlink" title="邻接表代码示例"></a>邻接表代码示例</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;bits/stdc++.h&gt;
+using namespace std;
+int n,m,j,k,w;
+struct node{
+    int to;
+    int w;
+};
+vector&lt;node&gt; v[100001];
+int main(){
+    node e;
+    scanf("%d%d",&amp;n,&amp;m);
+    for(int i=0;i&lt;m;i++){
+        scanf("%d%d%d",&amp;j,&amp;k,&amp;w);
+        e.to=k;
+        e.w=w;
+        v[j].push_back(e);
+        e.to=j;
+        v[k].push_back(e);
+    }
+    for(int i=1;i&lt;=n;i++)
+    {
+        for(vector&lt;node&gt;::iterator l=v[i].begin();k!=v[i].end();k++){
+            node t=*k;
+            printf("%d %d %d\n",i,t.to,t.w);
+        }
+    }
+    return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
