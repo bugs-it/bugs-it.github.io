@@ -146,13 +146,6 @@
 
   
   <url>
-    <loc>http://bugs8.v6.army/tags/c/</loc>
-    <lastmod>2023-07-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://bugs8.v6.army/tags/Node-js/</loc>
     <lastmod>2023-07-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -161,6 +154,13 @@
   
   <url>
     <loc>http://bugs8.v6.army/tags/Hexo/</loc>
+    <lastmod>2023-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://bugs8.v6.army/tags/c/</loc>
     <lastmod>2023-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -176,20 +176,6 @@
   </url>
   
   <url>
-    <loc>http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AE%89%E8%A3%85/</loc>
-    <lastmod>2023-07-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AE%89%E8%A3%85/Node-js/</loc>
-    <lastmod>2023-07-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2023-07-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -197,7 +183,21 @@
   </url>
   
   <url>
+    <loc>http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AE%89%E8%A3%85/</loc>
+    <lastmod>2023-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/c/</loc>
+    <lastmod>2023-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AE%89%E8%A3%85/Node-js/</loc>
     <lastmod>2023-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
