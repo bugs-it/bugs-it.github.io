@@ -5,14 +5,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="baidu-site-verification" content="codeva-aUHsRSrtBI" />
-    <meta name="keywords" content="泉州暑假集训Day 1, Cola Pig&#39;s Blog,Bugs-IT,IT,c++,python,html,js,css,node.js,hexo,markdown,Cola Pig的博客">
+    <meta name="keywords" content="泉州暑假集训Day 3, Cola Pig&#39;s Blog,Bugs-IT,IT,c++,python,html,js,css,node.js,hexo,markdown,Cola Pig的博客">
     <meta name="description" content="PS: This is a note.
-数据排序
+动态规划(DP)
 
-①选择排序: 不稳定的排序e.g. 输入n个数,将n个数从小到大排序sort(a,a+n);
-for(int i=0;i&amp;lt;n;i++)
-{
-    cout&amp;lt;&amp;lt;a[i]&amp;">
+构成动态规划算法的三要素动态规划对状态空间的遍历构成一张有向无环图，遍历顺序就是该有向无环图的一个拓扑序
+
+有向无环图中的节点对应问题中的 “状态”
+图中的边对应状态之间的 “转移">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -24,7 +24,7 @@ for(int i=0;i&amp;lt;n;i++)
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>泉州暑假集训Day 1 | Bugs-IT</title>
+    <title>泉州暑假集训Day 3 | Bugs-IT</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -346,12 +346,12 @@ for(int i=0;i&amp;lt;n;i++)
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">泉州暑假集训Day 1</h1>
+                    <h1 class="description center-align post-title">泉州暑假集训Day 3</h1>
                 </div>
             </div>
         </div>
@@ -408,7 +408,7 @@ for(int i=0;i&amp;lt;n;i++)
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-07-23
+                    2023-07-25
                 </div>
                 
 
@@ -417,7 +417,7 @@ for(int i=0;i&amp;lt;n;i++)
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    497
+                    631
                 </div>
                 
 
@@ -443,85 +443,79 @@ for(int i=0;i&amp;lt;n;i++)
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>PS: This is a note.</p>
-<h2 id="数据排序"><a href="#数据排序" class="headerlink" title="数据排序"></a>数据排序</h2><span id="more"></span>
+<h2 id="动态规划-DP"><a href="#动态规划-DP" class="headerlink" title="动态规划(DP)"></a>动态规划(DP)</h2><span id="more"></span>
 
-<h3 id="①选择排序-不稳定的排序"><a href="#①选择排序-不稳定的排序" class="headerlink" title="①选择排序: 不稳定的排序"></a>①选择排序: 不稳定的排序</h3><h3 id="e-g-输入n个数-将n个数从小到大排序"><a href="#e-g-输入n个数-将n个数从小到大排序" class="headerlink" title="e.g. 输入n个数,将n个数从小到大排序"></a>e.g. 输入n个数,将n个数从小到大排序</h3><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">sort(a,a+n);
-for(int i=0;i&lt;n;i++)
-{
-    cout&lt;&lt;a[i]&lt;&lt;" ";
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="构成动态规划算法的三要素"><a href="#构成动态规划算法的三要素" class="headerlink" title="构成动态规划算法的三要素"></a>构成动态规划算法的三要素</h3><p>动态规划对<strong>状态空间</strong>的<strong>遍历</strong>构成一张<strong>有向无环图</strong>，遍历顺序就是该有向无环图的一个<strong>拓扑序</strong></p>
+<ul>
+<li>有向无环图中的节点对应问题中的 <strong>“状态”</strong></li>
+<li>图中的边对应状态之间的 <strong>“转移”</strong></li>
+<li>转移的选取就是动态规划中的 <strong>“决策”</strong></li>
+</ul>
+<h3 id="问题能用动态规划求解的三个基本条件"><a href="#问题能用动态规划求解的三个基本条件" class="headerlink" title="问题能用动态规划求解的三个基本条件"></a>问题能用动态规划求解的三个基本条件</h3><ul>
+<li>子问题重叠性————有些子问题会被重复计算多次，动态规划算法对每一个子问题只计算一次，然后将其计算结果保存下来，当再次需要计算已经计算过的子问题时，直接返回之前记录的结果，从而获得较高的效率</li>
+<li>无后效性————动态规划要求已经求解的子问题不受后续阶段的影响，即每个状态都是过去历史的一个完整总结</li>
+<li>最优子结构性质————问题的最优解,其所包含的子问题的解也是最优的</li>
+</ul>
+<h3 id="DP例题"><a href="#DP例题" class="headerlink" title="DP例题"></a>DP例题</h3><h4 id="e-g-最少硬币找钱问题"><a href="#e-g-最少硬币找钱问题" class="headerlink" title="e.g. 最少硬币找钱问题"></a>e.g. 最少硬币找钱问题</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h3 id="②冒泡排序-从后往前排列元素"><a href="#②冒泡排序-从后往前排列元素" class="headerlink" title="②冒泡排序: 从后往前排列元素"></a>②冒泡排序: 从后往前排列元素</h3><h4 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">for(int i=1;i&lt;=n;i++)
+<h4 id="e-g-数字金子塔-II"><a href="#e-g-数字金子塔-II" class="headerlink" title="e.g. 数字金子塔 II"></a>e.g. 数字金子塔 II</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="e-g-红牌-洛谷P1130"><a href="#e-g-红牌-洛谷P1130" class="headerlink" title="e.g. 红牌(洛谷P1130)"></a>e.g. 红牌(<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1130">洛谷P1130</a>)</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="e-g-传球游戏-洛谷P1057"><a href="#e-g-传球游戏-洛谷P1057" class="headerlink" title="e.g. 传球游戏(洛谷P1057)"></a>e.g. 传球游戏(<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1057">洛谷P1057</a>)</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="e-g-方格取数-洛谷P1004"><a href="#e-g-方格取数-洛谷P1004" class="headerlink" title="e.g. 方格取数(洛谷P1004)"></a>e.g. 方格取数(<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1004">洛谷P1004</a>)</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="最长上升子序列-LIS"><a href="#最长上升子序列-LIS" class="headerlink" title="最长上升子序列(LIS)"></a>最长上升子序列(LIS)</h3><h4 id="LIS例题"><a href="#LIS例题" class="headerlink" title="LIS例题"></a>LIS例题</h4><h5 id="e-g-怪盗基德的滑翔翼-信息学奥赛一本通（C-版）在线评测系统-题号1286"><a href="#e-g-怪盗基德的滑翔翼-信息学奥赛一本通（C-版）在线评测系统-题号1286" class="headerlink" title="e.g. 怪盗基德的滑翔翼(信息学奥赛一本通（C++版）在线评测系统 题号1286)"></a>e.g. 怪盗基德的滑翔翼(<a target="_blank" rel="noopener" href="http://ybt.ssoier.cn:8088/problem_show.php?pid=1286">信息学奥赛一本通（C++版）在线评测系统 题号1286</a>)</h5><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="e-g-登山-信息学奥赛一本通（C-版）在线评测系统-题号1283"><a href="#e-g-登山-信息学奥赛一本通（C-版）在线评测系统-题号1283" class="headerlink" title="e.g. 登山(信息学奥赛一本通（C++版）在线评测系统 题号1283)"></a>e.g. 登山(<a target="_blank" rel="noopener" href="http://ybt.ssoier.cn:8088/problem_show.php?pid=1283">信息学奥赛一本通（C++版）在线评测系统 题号1283</a>)</h5><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="e-g-友好城市-信息学奥赛一本通（C-版）在线评测系统-题号1263"><a href="#e-g-友好城市-信息学奥赛一本通（C-版）在线评测系统-题号1263" class="headerlink" title="e.g. 友好城市(信息学奥赛一本通（C++版）在线评测系统 题号1263)"></a>e.g. 友好城市(<a target="_blank" rel="noopener" href="http://ybt.ssoier.cn:8088/problem_show.php?pid=1263">信息学奥赛一本通（C++版）在线评测系统 题号1263</a>)</h5><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="e-g-最长上升子序列和-信息学奥赛一本通（C-版）在线评测系统-题号1285"><a href="#e-g-最长上升子序列和-信息学奥赛一本通（C-版）在线评测系统-题号1285" class="headerlink" title="e.g. 最长上升子序列和(信息学奥赛一本通（C++版）在线评测系统 题号1285)"></a>e.g. 最长上升子序列和(<a target="_blank" rel="noopener" href="http://ybt.ssoier.cn:8088/problem_show.php?pid=1285">信息学奥赛一本通（C++版）在线评测系统 题号1285</a>)</h5><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="01背包"><a href="#01背包" class="headerlink" title="01背包"></a>01背包</h3><p><code>01背包公式: f[i][j]=max(f[i-1][j],f[i-1][j-v[i]]+w[i])</code></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;bits/stdc++.h&gt;
+using namespace std;
+int f[2][1010],v[1010],w[1010];
+int n,m,p;
+int main()
 {
-    for(int j;j&lt;=n-i;j++)
+    cin&gt;&gt;n&gt;&gt;m;
+    for(int i=1;i&lt;=n;i++)
     {
-        if(a[j]&gt;a[j+1])
+        cin&gt;&gt;v[i]&gt;&gt;w[i];
+    }
+    for(int i=1;i&lt;=n;i++)
+    {
+        //动规方程
+        
+        for(int j=0;j&lt;=m;j++)
         {
-            int t=a[j];
-            a[j]=a[j+1];
-            a[j+1]=t;
+            f[1][j]=f[0][j];
+            if(j&gt;=v[i])
+            {
+                f[i][j]=max(f[i-1][j],f[i-1][j-v[i]]+w[i]);
+            }
+        }
+
+        //优化(时间上无法优化，优化空间)
+
+        p^=1;
+        for(int j=0;j&lt;=m;j++)
+        {
+            f[p][j]=f[p^1][j];
+            if(j&gt;=v[i])
+            {
+                f[p][j]=max(f[0][j],f[0][j-v[i]]+w[i]);
+            }
         }
     }
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    cout&lt;&lt;f[1][m]&lt;&lt;endl;
+    cout&lt;&lt;f[p][m]&lt;&lt;endl;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="e-g-将6-3-1-2-5-4从小到大排序"><a href="#e-g-将6-3-1-2-5-4从小到大排序" class="headerlink" title="e.g. 将6,3,1,2,5,4从小到大排序"></a>e.g. 将6,3,1,2,5,4从小到大排序</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">for(int i=1;i=n;i++)
-{
-    for(int j=1;j&lt;=n;j++)
-    {
-        swap(a[i],a[j+1]);
-    }
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>注: swap是交换函数</p>
-<h3 id="③插入排序-将元素插入一个有序表中"><a href="#③插入排序-将元素插入一个有序表中" class="headerlink" title="③插入排序: 将元素插入一个有序表中"></a>③插入排序: 将元素插入一个有序表中</h3><h4 id="e-g-d"><a href="#e-g-d" class="headerlink" title="e.g. d"></a>e.g. d</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="④桶排序-若待排序值在一个有限范围内时，可设置有限桶，最后输出各个桶的值，得出有序表的值"><a href="#④桶排序-若待排序值在一个有限范围内时，可设置有限桶，最后输出各个桶的值，得出有序表的值" class="headerlink" title="④桶排序: 若待排序值在一个有限范围内时，可设置有限桶，最后输出各个桶的值，得出有序表的值"></a>④桶排序: 若待排序值在一个有限范围内时，可设置有限桶，最后输出各个桶的值，得出有序表的值</h3><h4 id="e-g-明明的随机数"><a href="#e-g-明明的随机数" class="headerlink" title="e.g. 明明的随机数"></a>e.g. 明明的随机数</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="⑤快速排序-最好的内部排序方法"><a href="#⑤快速排序-最好的内部排序方法" class="headerlink" title="⑤快速排序: 最好的内部排序方法"></a>⑤快速排序: 最好的内部排序方法</h3><h4 id="e-g-de"><a href="#e-g-de" class="headerlink" title="e.g. de"></a>e.g. de</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>注: sort是快排函数,详细可从<a target="_blank" rel="noopener" href="http://c.biancheng.net/stl/algorithms/">C语言中文网</a>查看</p>
-<h3 id="⑥归并排序-两个组的比较"><a href="#⑥归并排序-两个组的比较" class="headerlink" title="⑥归并排序: 两个组的比较"></a>⑥归并排序: 两个组的比较</h3><h4 id="e-g-ddasd"><a href="#e-g-ddasd" class="headerlink" title="e.g. ddasd"></a>e.g. ddasd</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="⑦希尔排序-直接插入排序算法的一种更高效的优化算法，非稳定排序算法，类似于宏观调控"><a href="#⑦希尔排序-直接插入排序算法的一种更高效的优化算法，非稳定排序算法，类似于宏观调控" class="headerlink" title="⑦希尔排序: 直接插入排序算法的一种更高效的优化算法，非稳定排序算法，类似于宏观调控"></a>⑦希尔排序: 直接插入排序算法的一种更高效的优化算法，非稳定排序算法，类似于宏观调控</h3><h4 id="e-g-dh"><a href="#e-g-dh" class="headerlink" title="e.g. dh"></a>e.g. dh</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="⑧基数排序-属于分配式排序"><a href="#⑧基数排序-属于分配式排序" class="headerlink" title="⑧基数排序: 属于分配式排序"></a>⑧基数排序: 属于分配式排序</h3><h4 id="e-g-dl"><a href="#e-g-dl" class="headerlink" title="e.g. dl"></a>e.g. dl</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="⑨堆排序-一种近似完全二叉树的结构"><a href="#⑨堆排序-一种近似完全二叉树的结构" class="headerlink" title="⑨堆排序: 一种近似完全二叉树的结构"></a>⑨堆排序: 一种近似完全二叉树的结构</h3><h4 id="e-g-dm"><a href="#e-g-dm" class="headerlink" title="e.g. dm"></a>e.g. dm</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h2 id="递推算法"><a href="#递推算法" class="headerlink" title="递推算法"></a>递推算法</h2><h3 id="递推算法例题"><a href="#递推算法例题" class="headerlink" title="递推算法例题"></a>递推算法例题</h3><h4 id="e-g-数字三角形"><a href="#e-g-数字三角形" class="headerlink" title="e.g. 数字三角形"></a>e.g. 数字三角形</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h4 id="e-g-斐波那契数列-1-1-2-3-5-8……"><a href="#e-g-斐波那契数列-1-1-2-3-5-8……" class="headerlink" title="e.g. 斐波那契数列(1,1,2,3,5,8……)"></a>e.g. 斐波那契数列(1,1,2,3,5,8……)</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include &lt;bits/stdc++.h&gt;
-using namespace std;
-int main() {
- int n,fn,fn_1=1,fn_2=1,f[101]={0,1,1,2};
- cin&gt;&gt;n;
- for(int i=3;i&lt;=n;i++)
- {
-  //原代码
-     f[i]=f[i-1]+f[i-2];
-     //优化后
-  fn=fn_1+fn_2;
-     fn_2=fn_1;
-     fn_1=fn;
- }
- cout&lt;&lt;f[n]&lt;&lt;endl&lt;&lt;fn;
- return 0;
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="e-g-昆虫繁殖"><a href="#e-g-昆虫繁殖" class="headerlink" title="e.g. 昆虫繁殖"></a>e.g. 昆虫繁殖</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h4 id="e-g-位数问题"><a href="#e-g-位数问题" class="headerlink" title="e.g. 位数问题"></a>e.g. 位数问题</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h4 id="e-g-过河卒"><a href="#e-g-过河卒" class="headerlink" title="e.g. 过河卒"></a>e.g. 过河卒</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h4 id="e-g-卡特兰数"><a href="#e-g-卡特兰数" class="headerlink" title="e.g. 卡特兰数"></a>e.g. 卡特兰数</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h2 id="递归算法"><a href="#递归算法" class="headerlink" title="递归算法"></a>递归算法</h2><h3 id="递归算法例题"><a href="#递归算法例题" class="headerlink" title="递归算法例题"></a>递归算法例题</h3><h4 id="e-g-给定n-n-gt-x3D-1-算1到n的累加和"><a href="#e-g-给定n-n-gt-x3D-1-算1到n的累加和" class="headerlink" title="e.g. 给定n(n>=1),算1到n的累加和"></a>e.g. 给定n(n&gt;=1),算1到n的累加和</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h4 id="e-g-汉诺塔"><a href="#e-g-汉诺塔" class="headerlink" title="e.g. 汉诺塔"></a>e.g. 汉诺塔</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>注: 永远没有最优的算法</p>
-
+<h3 id="完全背包"><a href="#完全背包" class="headerlink" title="完全背包"></a>完全背包</h3><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
                 
             </div>
             <hr/>
@@ -547,7 +541,7 @@ int main() {
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://bugs8.v6.army/2023/07d8c1ce2.html">http://bugs8.v6.army/2023/07d8c1ce2.html</a>
+                    <a href="http://bugs8.v6.army/2023/07e3827dce/">http://bugs8.v6.army/2023/07e3827dce/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -683,25 +677,25 @@ int main() {
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/07undefined.html">
+                <a href="/2023/077de6e86d/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loading.gif" data-original="/medias/featureimages/4.jpg" class="responsive-img" alt="泉州暑假集训Day 2">
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/2.jpg" class="responsive-img" alt="泉州暑假集训Day 4">
                         
-                        <span class="card-title">泉州暑假集训Day 2</span>
+                        <span class="card-title">泉州暑假集训Day 4</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             PS: This is a note.
-栈
+杂题选讲
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-07-24
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-07-26
                         </span>
                         <span class="publish-author">
                             
@@ -741,24 +735,25 @@ int main() {
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/06undefined.html">
+                <a href="/2023/0794854d58/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loading.gif" data-original="/medias/featureimages/2.jpg" class="responsive-img" alt="Node.js安装详解">
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/4.jpg" class="responsive-img" alt="泉州暑假集训Day 2">
                         
-                        <span class="card-title">Node.js安装详解</span>
+                        <span class="card-title">泉州暑假集训Day 2</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Step1：下载安装包先进官网下个安装包
+                            PS: This is a note.
+栈
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-30
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-24
                             </span>
                         <span class="publish-author">
                             
@@ -768,12 +763,12 @@ int main() {
                                     编程语言
                                 </a>
                             
-                            <a href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AE%89%E8%A3%85/" class="post-category">
-                                    安装
+                            <a href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" class="post-category">
+                                    学习记录
                                 </a>
                             
-                            <a href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AE%89%E8%A3%85/Node-js/" class="post-category">
-                                    Node.js
+                            <a href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/c/" class="post-category">
+                                    c++
                                 </a>
                             
                             
@@ -783,12 +778,8 @@ int main() {
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Node-js/">
-                        <span class="chip bg-color">Node.js</span>
-                    </a>
-                    
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
+                    <a href="/tags/c/">
+                        <span class="chip bg-color">c++</span>
                     </a>
                     
                 </div>

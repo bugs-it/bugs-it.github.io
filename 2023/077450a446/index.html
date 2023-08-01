@@ -5,20 +5,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="baidu-site-verification" content="codeva-aUHsRSrtBI" />
-    <meta name="keywords" content="晋江科技馆集训Day 1, Cola Pig&#39;s Blog,Bugs-IT,IT,c++,python,html,js,css,node.js,hexo,markdown,Cola Pig的博客">
+    <meta name="keywords" content="泉州暑假集训Day 8, Cola Pig&#39;s Blog,Bugs-IT,IT,c++,python,html,js,css,node.js,hexo,markdown,Cola Pig的博客">
     <meta name="description" content="PS: This is a note.
-枚举
+图论基础
 
-例题小鱼向左看
-输入样例
-6
-4 3 0 5 1 2
+图的概念偷懒一波~ :)
+segmentfault上某大佬的讲解
+知乎上某大佬的讲解
+补充:
 
-输出样例
-0 0 0 3 1 2
-
-#include &amp;lt;bits/stdc++.h&amp;gt;
-using namespace std">
+节点的度: 无向图中与节点相连的边的数目,称为节点的度
+节点的入度: 在有向图中,以这个节点">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -30,7 +27,7 @@ using namespace std">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>晋江科技馆集训Day 1 | Bugs-IT</title>
+    <title>泉州暑假集训Day 8 | Bugs-IT</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -352,12 +349,12 @@ using namespace std">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">晋江科技馆集训Day 1</h1>
+                    <h1 class="description center-align post-title">泉州暑假集训Day 8</h1>
                 </div>
             </div>
         </div>
@@ -414,7 +411,7 @@ using namespace std">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-08-01
+                    2023-07-31
                 </div>
                 
 
@@ -423,7 +420,7 @@ using namespace std">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    123
+                    346
                 </div>
                 
 
@@ -449,39 +446,61 @@ using namespace std">
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>PS: This is a note.</p>
-<h2 id="枚举"><a href="#枚举" class="headerlink" title="枚举"></a>枚举</h2><span id="more"></span>
+<h2 id="图论基础"><a href="#图论基础" class="headerlink" title="图论基础"></a>图论基础</h2><span id="more"></span>
 
-<h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><h4 id="小鱼向左看"><a href="#小鱼向左看" class="headerlink" title="小鱼向左看"></a>小鱼向左看</h4><p><img src="/medias/loading.gif" data-original="/../img/%E6%99%8B%E6%B1%9F%E7%A7%91%E6%8A%80%E9%A6%86%E6%9A%91%E5%81%87%E9%9B%86%E8%AE%AD/%E5%B0%8F%E9%B1%BC%E5%90%91%E5%B7%A6%E7%9C%8B.png" alt="题目"></p>
-<p><code>输入样例</code></p>
-<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">6
-4 3 0 5 1 2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<p><code>输出样例</code></p>
-<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">0 0 0 3 1 2<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include &lt;bits/stdc++.h&gt;
+<h3 id="图的概念"><a href="#图的概念" class="headerlink" title="图的概念"></a>图的概念</h3><p>偷懒一波~ :)</p>
+<p><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000013223267">segmentfault上某大佬的讲解</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/135407927">知乎上某大佬的讲解</a></p>
+<p>补充:</p>
+<ul>
+<li>节点的度: 无向图中与节点相连的边的数目,称为节点的度</li>
+<li>节点的入度: 在有向图中,以这个节点为终点的有向边的数目</li>
+<li>节点的出度: 在有向图中,以这个节点为起点的有向边的数目</li>
+</ul>
+<h3 id="邻接表"><a href="#邻接表" class="headerlink" title="邻接表"></a>邻接表</h3><h4 id="邻接表编码"><a href="#邻接表编码" class="headerlink" title="邻接表编码"></a>邻接表编码</h4><ol>
+<li>利用结构体+指针来实现(原始,不推荐)</li>
+<li>利用STL库vector+结构体来实现</li>
+</ol>
+<h4 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h4><ol>
+<li>结构体</li>
+<li>创建图<ol>
+<li>顶点和边数，顶点需要用一维数组保存</li>
+<li>获取顶点的下标，因为链接结点中的index域是顶点的下标值。</li>
+<li>创建结点，通过头插法(或尾插法)把结点链接到头结点的尾部</li>
+</ol>
+</li>
+<li>打印</li>
+</ol>
+<p>详细可见: <a target="_blank" rel="noopener" href="https://www.cnblogs.com/cmusketeer/">TMusketeer的博客</a></p>
+<h4 id="邻接表代码示例"><a href="#邻接表代码示例" class="headerlink" title="邻接表代码示例"></a>邻接表代码示例</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;bits/stdc++.h&gt;
 using namespace std;
-int main() {
-	int n,q[10001];
-	cin&gt;&gt;n;
-	for(int i=1;i&lt;=n;i++){
-		cin&gt;&gt;q[i];
-	}
-	for(int i=1;i&lt;=n;i++){
-		int sum=0;
-		for(int j=i-1;j&gt;=1;j--)
-		{
-			if(q[i]&gt;q[j])
-			{
-				sum++;
-			}
-		}
-		cout&lt;&lt;sum&lt;&lt;" ";
-	}
-	return 0;
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="更多例题可以上CSDN查看"><a href="#更多例题可以上CSDN查看" class="headerlink" title="更多例题可以上CSDN查看"></a>更多例题可以上<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_41960890/article/details/105319372">CSDN</a>查看</h4><h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><h3 id="可以看我之前的博客"><a href="#可以看我之前的博客" class="headerlink" title="可以看我之前的博客"></a>可以看我之前的<a href="http://bugs8.v6.army/2023/07/23/quan-zhou-shu-jia-ji-xun-day-1/">博客</a></h3>
+int n,m,j,k,w;
+struct node{
+    int to;
+    int w;
+};
+vector&lt;node&gt; v[100001];
+int main(){
+    node e;
+    scanf("%d%d",&amp;n,&amp;m);
+    for(int i=0;i&lt;m;i++){
+        scanf("%d%d%d",&amp;j,&amp;k,&amp;w);
+        e.to=k;
+        e.w=w;
+        v[j].push_back(e);
+        e.to=j;
+        v[k].push_back(e);
+    }
+    for(int i=1;i&lt;=n;i++)
+    {
+        for(vector&lt;node&gt;::iterator l=v[i].begin();k!=v[i].end();k++){
+            node t=*k;
+            printf("%d %d %d\n",i,t.to,t.w);
+        }
+    }
+    return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
                 
             </div>
             <hr/>
@@ -507,7 +526,7 @@ int main() {
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://bugs8.v6.army/2023/08undefined.html">http://bugs8.v6.army/2023/08undefined.html</a>
+                    <a href="http://bugs8.v6.army/2023/077450a446/">http://bugs8.v6.army/2023/077450a446/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -639,12 +658,11 @@ int main() {
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/08undefined.html">
+                <a href="/2023/08955aecba/">
                     <div class="card-image">
                         
                         
@@ -661,9 +679,9 @@ int main() {
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-08-01
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-08-01
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -684,7 +702,6 @@ int main() {
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -703,25 +720,25 @@ int main() {
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/07undefined.html">
+                <a href="/2023/07e4efb9d7/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loading.gif" data-original="/medias/featureimages/22.jpg" class="responsive-img" alt="泉州暑假集训Day 8">
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/23.jpg" class="responsive-img" alt="泉州暑假集训Day 7">
                         
-                        <span class="card-title">泉州暑假集训Day 8</span>
+                        <span class="card-title">泉州暑假集训Day 7</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             PS: This is a note.
-图论基础
+基本字符串的应用及相关算法
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-31
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-30
                             </span>
                         <span class="publish-author">
                             
