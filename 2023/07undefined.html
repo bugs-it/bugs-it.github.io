@@ -5,14 +5,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="baidu-site-verification" content="codeva-aUHsRSrtBI" />
-    <meta name="keywords" content="泉州暑假集训Day 1, Cola Pig&#39;s Blog,Bugs-IT,IT,c++,python,html,js,css,node.js,hexo,markdown,Cola Pig的博客">
+    <meta name="keywords" content="泉州暑假集训Day 2, Cola Pig&#39;s Blog,Bugs-IT,IT,c++,python,html,js,css,node.js,hexo,markdown,Cola Pig的博客">
     <meta name="description" content="PS: This is a note.
-数据排序
+栈
 
-①选择排序: 不稳定的排序e.g. 输入n个数,将n个数从小到大排序sort(a,a+n);
-for(int i=0;i&amp;lt;n;i++)
-{
-    cout&amp;lt;&amp;lt;a[i]&amp;">
+数据结构(DS)高效的组织数据的一种方式
+数组最简单的数据结构是数组(array): int n[101];
+数组属于数据结构中的用顺序结构实现的线性表
+注: 线性表是一维的，可以用顺序结构和链">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -24,7 +24,7 @@ for(int i=0;i&amp;lt;n;i++)
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>泉州暑假集训Day 1 | Bugs-IT</title>
+    <title>泉州暑假集训Day 2 | Bugs-IT</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -346,12 +346,12 @@ for(int i=0;i&amp;lt;n;i++)
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">泉州暑假集训Day 1</h1>
+                    <h1 class="description center-align post-title">泉州暑假集训Day 2</h1>
                 </div>
             </div>
         </div>
@@ -408,7 +408,7 @@ for(int i=0;i&amp;lt;n;i++)
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-07-23
+                    2023-07-24
                 </div>
                 
 
@@ -417,7 +417,7 @@ for(int i=0;i&amp;lt;n;i++)
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    497
+                    1.1k
                 </div>
                 
 
@@ -443,85 +443,117 @@ for(int i=0;i&amp;lt;n;i++)
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>PS: This is a note.</p>
-<h2 id="数据排序"><a href="#数据排序" class="headerlink" title="数据排序"></a>数据排序</h2><span id="more"></span>
+<h2 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h2><span id="more"></span>
 
-<h3 id="①选择排序-不稳定的排序"><a href="#①选择排序-不稳定的排序" class="headerlink" title="①选择排序: 不稳定的排序"></a>①选择排序: 不稳定的排序</h3><h3 id="e-g-输入n个数-将n个数从小到大排序"><a href="#e-g-输入n个数-将n个数从小到大排序" class="headerlink" title="e.g. 输入n个数,将n个数从小到大排序"></a>e.g. 输入n个数,将n个数从小到大排序</h3><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">sort(a,a+n);
-for(int i=0;i&lt;n;i++)
-{
-    cout&lt;&lt;a[i]&lt;&lt;" ";
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="②冒泡排序-从后往前排列元素"><a href="#②冒泡排序-从后往前排列元素" class="headerlink" title="②冒泡排序: 从后往前排列元素"></a>②冒泡排序: 从后往前排列元素</h3><h4 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">for(int i=1;i&lt;=n;i++)
-{
-    for(int j;j&lt;=n-i;j++)
-    {
-        if(a[j]&gt;a[j+1])
-        {
-            int t=a[j];
-            a[j]=a[j+1];
-            a[j+1]=t;
-        }
-    }
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="e-g-将6-3-1-2-5-4从小到大排序"><a href="#e-g-将6-3-1-2-5-4从小到大排序" class="headerlink" title="e.g. 将6,3,1,2,5,4从小到大排序"></a>e.g. 将6,3,1,2,5,4从小到大排序</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">for(int i=1;i=n;i++)
-{
-    for(int j=1;j&lt;=n;j++)
-    {
-        swap(a[i],a[j+1]);
-    }
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>注: swap是交换函数</p>
-<h3 id="③插入排序-将元素插入一个有序表中"><a href="#③插入排序-将元素插入一个有序表中" class="headerlink" title="③插入排序: 将元素插入一个有序表中"></a>③插入排序: 将元素插入一个有序表中</h3><h4 id="e-g-d"><a href="#e-g-d" class="headerlink" title="e.g. d"></a>e.g. d</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="④桶排序-若待排序值在一个有限范围内时，可设置有限桶，最后输出各个桶的值，得出有序表的值"><a href="#④桶排序-若待排序值在一个有限范围内时，可设置有限桶，最后输出各个桶的值，得出有序表的值" class="headerlink" title="④桶排序: 若待排序值在一个有限范围内时，可设置有限桶，最后输出各个桶的值，得出有序表的值"></a>④桶排序: 若待排序值在一个有限范围内时，可设置有限桶，最后输出各个桶的值，得出有序表的值</h3><h4 id="e-g-明明的随机数"><a href="#e-g-明明的随机数" class="headerlink" title="e.g. 明明的随机数"></a>e.g. 明明的随机数</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="⑤快速排序-最好的内部排序方法"><a href="#⑤快速排序-最好的内部排序方法" class="headerlink" title="⑤快速排序: 最好的内部排序方法"></a>⑤快速排序: 最好的内部排序方法</h3><h4 id="e-g-de"><a href="#e-g-de" class="headerlink" title="e.g. de"></a>e.g. de</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>注: sort是快排函数,详细可从<a target="_blank" rel="noopener" href="http://c.biancheng.net/stl/algorithms/">C语言中文网</a>查看</p>
-<h3 id="⑥归并排序-两个组的比较"><a href="#⑥归并排序-两个组的比较" class="headerlink" title="⑥归并排序: 两个组的比较"></a>⑥归并排序: 两个组的比较</h3><h4 id="e-g-ddasd"><a href="#e-g-ddasd" class="headerlink" title="e.g. ddasd"></a>e.g. ddasd</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="⑦希尔排序-直接插入排序算法的一种更高效的优化算法，非稳定排序算法，类似于宏观调控"><a href="#⑦希尔排序-直接插入排序算法的一种更高效的优化算法，非稳定排序算法，类似于宏观调控" class="headerlink" title="⑦希尔排序: 直接插入排序算法的一种更高效的优化算法，非稳定排序算法，类似于宏观调控"></a>⑦希尔排序: 直接插入排序算法的一种更高效的优化算法，非稳定排序算法，类似于宏观调控</h3><h4 id="e-g-dh"><a href="#e-g-dh" class="headerlink" title="e.g. dh"></a>e.g. dh</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="⑧基数排序-属于分配式排序"><a href="#⑧基数排序-属于分配式排序" class="headerlink" title="⑧基数排序: 属于分配式排序"></a>⑧基数排序: 属于分配式排序</h3><h4 id="e-g-dl"><a href="#e-g-dl" class="headerlink" title="e.g. dl"></a>e.g. dl</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="⑨堆排序-一种近似完全二叉树的结构"><a href="#⑨堆排序-一种近似完全二叉树的结构" class="headerlink" title="⑨堆排序: 一种近似完全二叉树的结构"></a>⑨堆排序: 一种近似完全二叉树的结构</h3><h4 id="e-g-dm"><a href="#e-g-dm" class="headerlink" title="e.g. dm"></a>e.g. dm</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h2 id="递推算法"><a href="#递推算法" class="headerlink" title="递推算法"></a>递推算法</h2><h3 id="递推算法例题"><a href="#递推算法例题" class="headerlink" title="递推算法例题"></a>递推算法例题</h3><h4 id="e-g-数字三角形"><a href="#e-g-数字三角形" class="headerlink" title="e.g. 数字三角形"></a>e.g. 数字三角形</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h4 id="e-g-斐波那契数列-1-1-2-3-5-8……"><a href="#e-g-斐波那契数列-1-1-2-3-5-8……" class="headerlink" title="e.g. 斐波那契数列(1,1,2,3,5,8……)"></a>e.g. 斐波那契数列(1,1,2,3,5,8……)</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include &lt;bits/stdc++.h&gt;
+<h3 id="数据结构-DS"><a href="#数据结构-DS" class="headerlink" title="数据结构(DS)"></a>数据结构(DS)</h3><p>高效的组织数据的一种方式</p>
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><p>最简单的数据结构是<strong>数组(array)</strong>: <code>int n[101];</code></p>
+<p>数组属于数据结构中的用顺序结构实现的线性表</p>
+<p>注: 线性表是一维的，可以用顺序结构和链式结构实现</p>
+<h3 id="栈的使用"><a href="#栈的使用" class="headerlink" title="栈的使用"></a>栈的使用</h3><p>栈是一种基本的顺序结构，属于特殊的线性表(操作受限，特性: 后进先出————只能在一端插入和删除)</p>
+<p>我们通常把元素插入栈叫做<strong>进栈(PUSH)</strong>,删除栈内元素叫<strong>出栈(POP)</strong></p>
+<ul>
+<li>栈中可以插入和删除的一段叫栈顶</li>
+<li>另一端叫做栈底</li>
+<li>用一个指针TOP指向栈顶，若TOP=0，表示栈空，TOP=N时栈满，进栈时TOP加1，退栈时TOP减1。栈指针在运算中永远指向栈顶</li>
+</ul>
+<h3 id="实现栈的常用方法"><a href="#实现栈的常用方法" class="headerlink" title="实现栈的常用方法"></a>实现栈的常用方法</h3><h4 id="数组模拟栈"><a href="#数组模拟栈" class="headerlink" title="数组模拟栈"></a>数组模拟栈</h4><h4 id="STL模拟栈"><a href="#STL模拟栈" class="headerlink" title="STL模拟栈"></a>STL模拟栈</h4><h3 id="栈例题"><a href="#栈例题" class="headerlink" title="栈例题"></a>栈例题</h3><h4 id="e-g-后缀表达式求值-洛谷P1449"><a href="#e-g-后缀表达式求值-洛谷P1449" class="headerlink" title="e.g. 后缀表达式求值(洛谷P1449)"></a>e.g. 后缀表达式求值(<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1449">洛谷P1449</a>)</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include &lt;bits/stdc++.h&gt;
 using namespace std;
-int main() {
- int n,fn,fn_1=1,fn_2=1,f[101]={0,1,1,2};
- cin&gt;&gt;n;
- for(int i=3;i&lt;=n;i++)
- {
-  //原代码
-     f[i]=f[i-1]+f[i-2];
-     //优化后
-  fn=fn_1+fn_2;
-     fn_2=fn_1;
-     fn_1=fn;
- }
- cout&lt;&lt;f[n]&lt;&lt;endl&lt;&lt;fn;
- return 0;
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+stack&lt;int&gt; sta;
+//运用STL中的栈可能超时，当遇到过大的元素时应用数组
+string s;
+int main()
+{
+	int temp=0,x,y;
+	cin&gt;&gt;s;
+	for(int i=0; i&lt;s.size(); i++) {
+		if(s[i]&gt;='0'&amp;&amp;s[i]&lt;='9') {
+			temp=temp*10+s[i]-'0';
+		}
+		if(s[i]=='@')
+		{
+			break;
+		}
+		else if(s[i]=='.') {
+			sta.push(temp),temp=0;
+		}
+		if(s[i]=='+') {
+			x=sta.top();
+			sta.pop();
+			y=sta.top();
+			sta.pop();
+			sta.push(y+x);
+		}
+		if(s[i]=='-') {
+			x=sta.top();
+			sta.pop();
+			y=sta.top();
+			sta.pop();
+			sta.push(y-x);
+		}
+		if(s[i]=='*') {
+			x=sta.top();
+			sta.pop();
+			y=sta.top();
+			sta.pop();
+			sta.push(y*x);
+		}
+		if(s[i]=='/') {
+			x=sta.top();
+			sta.pop();
+			y=sta.top();
+			sta.pop();
+			sta.push(y/x);
+		}
+	}
+	cout&lt;&lt;sta.top();
+	return 0;
+}
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="e-g-昆虫繁殖"><a href="#e-g-昆虫繁殖" class="headerlink" title="e.g. 昆虫繁殖"></a>e.g. 昆虫繁殖</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h4 id="e-g-位数问题"><a href="#e-g-位数问题" class="headerlink" title="e.g. 位数问题"></a>e.g. 位数问题</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h4 id="e-g-过河卒"><a href="#e-g-过河卒" class="headerlink" title="e.g. 过河卒"></a>e.g. 过河卒</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h4 id="e-g-卡特兰数"><a href="#e-g-卡特兰数" class="headerlink" title="e.g. 卡特兰数"></a>e.g. 卡特兰数</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h2 id="递归算法"><a href="#递归算法" class="headerlink" title="递归算法"></a>递归算法</h2><h3 id="递归算法例题"><a href="#递归算法例题" class="headerlink" title="递归算法例题"></a>递归算法例题</h3><h4 id="e-g-给定n-n-gt-x3D-1-算1到n的累加和"><a href="#e-g-给定n-n-gt-x3D-1-算1到n的累加和" class="headerlink" title="e.g. 给定n(n>=1),算1到n的累加和"></a>e.g. 给定n(n&gt;=1),算1到n的累加和</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h4 id="e-g-汉诺塔"><a href="#e-g-汉诺塔" class="headerlink" title="e.g. 汉诺塔"></a>e.g. 汉诺塔</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>注: 永远没有最优的算法</p>
-
+<h4 id="e-g-中缀表达式转后缀表达式"><a href="#e-g-中缀表达式转后缀表达式" class="headerlink" title="e.g. 中缀表达式转后缀表达式"></a>e.g. 中缀表达式转后缀表达式</h4><p>解法: <a target="_blank" rel="noopener" href="https://juejin.cn/s/c%2B%2B%E4%B8%AD%E7%BC%80%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%BD%AC%E5%90%8E%E7%BC%80%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%B9%B6%E8%AE%A1%E7%AE%97%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E5%80%BC">稀土掘金</a></p>
+<h2 id="队列-queue"><a href="#队列-queue" class="headerlink" title="队列(queue)"></a>队列(queue)</h2><p>队列是一种线性表</p>
+<h3 id="队列例题"><a href="#队列例题" class="headerlink" title="队列例题"></a>队列例题</h3><h4 id="e-g-Blah数集-信息学奥赛一本通（C-版）在线评测系统-题号1333"><a href="#e-g-Blah数集-信息学奥赛一本通（C-版）在线评测系统-题号1333" class="headerlink" title="e.g. Blah数集(信息学奥赛一本通（C++版）在线评测系统 题号1333)"></a>e.g. Blah数集(<a target="_blank" rel="noopener" href="http://ybt.ssoier.cn:8088/problem_show.php?pid=1333">信息学奥赛一本通（C++版）在线评测系统 题号1333</a>)</h4><p>解法: <a target="_blank" rel="noopener" href="https://blog.csdn.net/HybridCOW_HORSE/article/details/124501746">CSDN</a></p>
+<h2 id="树与二叉树"><a href="#树与二叉树" class="headerlink" title="树与二叉树"></a>树与二叉树</h2><h3 id="树的定义"><a href="#树的定义" class="headerlink" title="树的定义:"></a>树的定义:</h3><ul>
+<li>树是一种<strong>非线性</strong>的数据结构</li>
+<li>树是若干<strong>结点</strong>的集合，是由唯一的<strong>根</strong>和若干<strong>子树</strong>组成</li>
+<li>树的定义本身就是<strong>递归</strong>的</li>
+</ul>
+<h3 id="树的基本概念"><a href="#树的基本概念" class="headerlink" title="树的基本概念"></a>树的基本概念</h3><h4 id="度"><a href="#度" class="headerlink" title="度"></a>度</h4><ol>
+<li><strong>结点的度</strong>: 结点拥有的字数个数</li>
+<li><strong>树的度</strong>: 一棵树中，最大的结点的度</li>
+</ol>
+<h4 id="结点"><a href="#结点" class="headerlink" title="结点"></a>结点</h4><ol>
+<li><strong>叶结点或终端结点</strong>: 度为零的节点</li>
+<li><strong>父亲结点或父结点</strong>: 若一个节点含有子结点，则这个结点称为其子结点的父结点</li>
+<li><strong>孩子结点或子结点</strong>: 一个结点含有的子树的根结点</li>
+<li><strong>兄弟结点</strong>: 具有相同父结点的节点互称为兄弟结点</li>
+<li><strong>结点的层次</strong>: 根开始定义起，根为第1层，根的子结点为第2层，以此类推</li>
+<li><strong>堂兄弟结点</strong>：父结点在同一层的结点互为堂兄弟</li>
+<li><strong>结点的祖先</strong>：从根到该结点所经分支上的所有结点</li>
+</ol>
+<h4 id="高度或和深度"><a href="#高度或和深度" class="headerlink" title="高度或和深度"></a>高度或和深度</h4><ol>
+<li><strong>树的高度或深度</strong>: 树中结点的最大层次称为树的深度</li>
+<li>深度较为常用</li>
+</ol>
+<h4 id="有序树和无序树"><a href="#有序树和无序树" class="headerlink" title="有序树和无序树"></a>有序树和无序树</h4><ol>
+<li><strong>有序树</strong>: 树中结点的子树从左到右是有次序的，不能交换</li>
+<li><strong>无序树</strong>: 树中结点的子树没有顺序，可以任意交换</li>
+</ol>
+<p>详细可以看<a target="_blank" rel="noopener" href="https://blog.csdn.net/BlackLJ/article/details/122053118?utm_source=app&amp;app_version=6.1.0">这篇博客</a></p>
+<p>注: 结点和节点都是正确的</p>
+<h3 id="二叉树的定义"><a href="#二叉树的定义" class="headerlink" title="二叉树的定义"></a>二叉树的定义</h3><p>在一般的树上加上如下两个限制条件就得到了二叉树</p>
+<ul>
+<li>每个结点最多只有两棵子树，即二叉树中的结点的度只能为0，1，2</li>
+<li>子树有左右之分，不能颠倒</li>
+<li>根据二叉树的定义共有5种基本形态:”空二叉树”、”只有根节点”、”只有左子树，右子树为空”、”只有右子树,左子树为空”、”既有左子树，又有右子树”</li>
+</ul>
+<h4 id="满二叉树-所有分支结点都有子结点-的定义"><a href="#满二叉树-所有分支结点都有子结点-的定义" class="headerlink" title="满二叉树(所有分支结点都有子结点)的定义"></a>满二叉树(所有分支结点都有子结点)的定义</h4><ul>
+<li>在一棵二叉树中，如果所有的分支结点都有左孩子和右孩子结点，并且叶子结点都集中在二叉树的最下一层，则这样的二叉树称为满二叉树</li>
+</ul>
+<h4 id="完全二叉树的定义"><a href="#完全二叉树的定义" class="headerlink" title="完全二叉树的定义"></a>完全二叉树的定义</h4><ul>
+<li>如果对一棵深度为k、有n个结点的二叉树进行编号后，各结点的编号与深度为k的满二叉树中相同位置上的结点的编号均相同，那么这棵二叉树就是一棵完全二叉树</li>
+</ul>
+<h3 id="⭐二叉树的主要性质"><a href="#⭐二叉树的主要性质" class="headerlink" title="⭐二叉树的主要性质"></a>⭐二叉树的主要性质</h3>
                 
             </div>
             <hr/>
@@ -547,7 +579,7 @@ int main() {
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://bugs8.v6.army/posts/d8c1ce2.html">http://bugs8.v6.army/posts/d8c1ce2.html</a>
+                    <a href="http://bugs8.v6.army/2023/07undefined.html">http://bugs8.v6.army/2023/07undefined.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -683,25 +715,25 @@ int main() {
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/undefined.html">
+                <a href="/2023/07undefined.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loading.gif" data-original="/medias/featureimages/4.jpg" class="responsive-img" alt="泉州暑假集训Day 2">
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/3.jpg" class="responsive-img" alt="泉州暑假集训Day 3">
                         
-                        <span class="card-title">泉州暑假集训Day 2</span>
+                        <span class="card-title">泉州暑假集训Day 3</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             PS: This is a note.
-栈
+动态规划(DP)
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-07-24
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-07-25
                         </span>
                         <span class="publish-author">
                             
@@ -741,24 +773,25 @@ int main() {
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/undefined.html">
+                <a href="/2023/07d8c1ce2.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loading.gif" data-original="/medias/featureimages/2.jpg" class="responsive-img" alt="Node.js安装详解">
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/5.jpg" class="responsive-img" alt="泉州暑假集训Day 1">
                         
-                        <span class="card-title">Node.js安装详解</span>
+                        <span class="card-title">泉州暑假集训Day 1</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Step1：下载安装包先进官网下个安装包
+                            PS: This is a note.
+数据排序
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-30
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-23
                             </span>
                         <span class="publish-author">
                             
@@ -768,12 +801,12 @@ int main() {
                                     编程语言
                                 </a>
                             
-                            <a href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AE%89%E8%A3%85/" class="post-category">
-                                    安装
+                            <a href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" class="post-category">
+                                    学习记录
                                 </a>
                             
-                            <a href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AE%89%E8%A3%85/Node-js/" class="post-category">
-                                    Node.js
+                            <a href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/c/" class="post-category">
+                                    c++
                                 </a>
                             
                             
@@ -783,12 +816,8 @@ int main() {
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Node-js/">
-                        <span class="chip bg-color">Node.js</span>
-                    </a>
-                    
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
+                    <a href="/tags/c/">
+                        <span class="chip bg-color">c++</span>
                     </a>
                     
                 </div>
