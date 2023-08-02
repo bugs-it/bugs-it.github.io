@@ -6,7 +6,7 @@
   <link href="http://bugs8.v6.army/atom.xml" rel="self"/>
   
   <link href="http://bugs8.v6.army/"/>
-  <updated>2023-08-01T02:49:16.893Z</updated>
+  <updated>2023-08-02T02:17:35.438Z</updated>
   <id>http://bugs8.v6.army/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>晋江科技馆集训Day 2</title>
+    <link href="http://bugs8.v6.army/2023/08c53bd00/"/>
+    <id>http://bugs8.v6.army/2023/08c53bd00/</id>
+    <published>2023-08-02T00:30:00.000Z</published>
+    <updated>2023-08-02T02:17:35.438Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;PS: This is a note.&lt;/p&gt;
+&lt;h2 id=&quot;递推与递归&quot;&gt;&lt;a href=&quot;#递推与递归&quot; class=&quot;headerlink&quot; title=&quot;递推与递归&quot;&gt;&lt;/a&gt;递推与递归&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="编程语言" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="学习记录" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="c++" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/c/"/>
+    
+    
+    <category term="c++" scheme="http://bugs8.v6.army/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
     <title>晋江科技馆集训Day 1</title>
     <link href="http://bugs8.v6.army/2023/08955aecba/"/>
     <id>http://bugs8.v6.army/2023/08955aecba/</id>
     <published>2023-08-01T00:30:00.000Z</published>
-    <updated>2023-08-01T02:49:16.893Z</updated>
+    <updated>2023-08-02T00:38:16.995Z</updated>
     
     
     <summary type="html">&lt;p&gt;PS: This is a note.&lt;/p&gt;
@@ -189,7 +213,7 @@
     <link href="http://bugs8.v6.army/2023/07d8c1ce2/"/>
     <id>http://bugs8.v6.army/2023/07d8c1ce2/</id>
     <published>2023-07-23T00:30:00.000Z</published>
-    <updated>2023-08-01T02:31:38.877Z</updated>
+    <updated>2023-08-02T01:52:02.496Z</updated>
     
     
     <summary type="html">&lt;p&gt;PS: This is a note.&lt;/p&gt;
