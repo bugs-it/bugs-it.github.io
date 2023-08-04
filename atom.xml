@@ -6,7 +6,7 @@
   <link href="http://bugs8.v6.army/atom.xml" rel="self"/>
   
   <link href="http://bugs8.v6.army/"/>
-  <updated>2023-08-03T03:21:38.240Z</updated>
+  <updated>2023-08-04T01:27:40.639Z</updated>
   <id>http://bugs8.v6.army/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>晋江科技馆集训Day 4</title>
+    <link href="http://bugs8.v6.army/2023/08e5301835/"/>
+    <id>http://bugs8.v6.army/2023/08e5301835/</id>
+    <published>2023-08-04T00:30:00.000Z</published>
+    <updated>2023-08-04T01:27:40.639Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;搜索-CSP-J-和DP-CSP-S&quot;&gt;&lt;a href=&quot;#搜索-CSP-J-和DP-CSP-S&quot; class=&quot;headerlink&quot; title=&quot;搜索(CSP-J)和DP(CSP-S)&quot;&gt;&lt;/a&gt;搜索(CSP-J)和DP(CSP-S)&lt;/h2&gt;&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="编程语言" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="学习记录" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="c++" scheme="http://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/c/"/>
+    
+    
+    <category term="c++" scheme="http://bugs8.v6.army/tags/c/"/>
+    
+  </entry>
   
   <entry>
     <title>晋江科技馆集训Day 3</title>
@@ -92,7 +121,7 @@
     <link href="http://bugs8.v6.army/2023/077450a446/"/>
     <id>http://bugs8.v6.army/2023/077450a446/</id>
     <published>2023-07-31T00:30:00.000Z</published>
-    <updated>2023-08-01T07:30:49.751Z</updated>
+    <updated>2023-08-04T00:53:45.527Z</updated>
     
     
     <summary type="html">&lt;p&gt;PS: This is a note.&lt;/p&gt;
@@ -116,7 +145,7 @@
     <link href="http://bugs8.v6.army/2023/07e4efb9d7/"/>
     <id>http://bugs8.v6.army/2023/07e4efb9d7/</id>
     <published>2023-07-30T00:30:00.000Z</published>
-    <updated>2023-08-01T02:49:16.900Z</updated>
+    <updated>2023-08-04T00:50:18.895Z</updated>
     
     
     <summary type="html">&lt;p&gt;PS: This is a note.&lt;/p&gt;
@@ -140,7 +169,7 @@
     <link href="http://bugs8.v6.army/2023/076a8f01b5/"/>
     <id>http://bugs8.v6.army/2023/076a8f01b5/</id>
     <published>2023-07-28T00:30:00.000Z</published>
-    <updated>2023-08-01T02:49:16.899Z</updated>
+    <updated>2023-08-04T00:48:10.154Z</updated>
     
     
     <summary type="html">&lt;p&gt;PS: This is a note.&lt;/p&gt;
@@ -164,11 +193,11 @@
     <link href="http://bugs8.v6.army/2023/077de6e86d/"/>
     <id>http://bugs8.v6.army/2023/077de6e86d/</id>
     <published>2023-07-26T00:30:00.000Z</published>
-    <updated>2023-08-01T02:49:16.898Z</updated>
+    <updated>2023-08-04T00:53:01.903Z</updated>
     
     
     <summary type="html">&lt;p&gt;PS: This is a note.&lt;/p&gt;
-&lt;h2 id=&quot;杂题选讲&quot;&gt;&lt;a href=&quot;#杂题选讲&quot; class=&quot;headerlink&quot; title=&quot;杂题选讲&quot;&gt;&lt;/a&gt;杂题选讲&lt;/h2&gt;</summary>
+&lt;h2 id=&quot;杂项&quot;&gt;&lt;a href=&quot;#杂项&quot; class=&quot;headerlink&quot; title=&quot;杂项&quot;&gt;&lt;/a&gt;杂项&lt;/h2&gt;</summary>
     
     
     
@@ -188,7 +217,7 @@
     <link href="http://bugs8.v6.army/2023/07e3827dce/"/>
     <id>http://bugs8.v6.army/2023/07e3827dce/</id>
     <published>2023-07-25T00:30:00.000Z</published>
-    <updated>2023-08-01T02:49:16.897Z</updated>
+    <updated>2023-08-04T00:49:42.049Z</updated>
     
     
     <summary type="html">&lt;p&gt;PS: This is a note.&lt;/p&gt;
@@ -236,7 +265,7 @@
     <link href="http://bugs8.v6.army/2023/07d8c1ce2/"/>
     <id>http://bugs8.v6.army/2023/07d8c1ce2/</id>
     <published>2023-07-23T00:30:00.000Z</published>
-    <updated>2023-08-02T01:52:02.496Z</updated>
+    <updated>2023-08-04T00:51:34.068Z</updated>
     
     
     <summary type="html">&lt;p&gt;PS: This is a note.&lt;/p&gt;

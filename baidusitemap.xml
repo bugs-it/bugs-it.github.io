@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://bugs8.v6.army/2023/08e5301835/</loc>
+    <lastmod>2023-08-04</lastmod>
+  </url>
+  <url>
+    <loc>http://bugs8.v6.army/2023/077450a446/</loc>
+    <lastmod>2023-08-04</lastmod>
+  </url>
+  <url>
+    <loc>http://bugs8.v6.army/2023/077de6e86d/</loc>
+    <lastmod>2023-08-04</lastmod>
+  </url>
+  <url>
+    <loc>http://bugs8.v6.army/2023/07d8c1ce2/</loc>
+    <lastmod>2023-08-04</lastmod>
+  </url>
+  <url>
+    <loc>http://bugs8.v6.army/2023/07e4efb9d7/</loc>
+    <lastmod>2023-08-04</lastmod>
+  </url>
+  <url>
+    <loc>http://bugs8.v6.army/2023/07e3827dce/</loc>
+    <lastmod>2023-08-04</lastmod>
+  </url>
+  <url>
+    <loc>http://bugs8.v6.army/2023/076a8f01b5/</loc>
+    <lastmod>2023-08-04</lastmod>
+  </url>
+  <url>
     <loc>http://bugs8.v6.army/2023/061279530b/</loc>
     <lastmod>2023-08-04</lastmod>
   </url>
@@ -19,29 +47,5 @@
   <url>
     <loc>http://bugs8.v6.army/2023/08955aecba/</loc>
     <lastmod>2023-08-03</lastmod>
-  </url>
-  <url>
-    <loc>http://bugs8.v6.army/2023/07d8c1ce2/</loc>
-    <lastmod>2023-08-02</lastmod>
-  </url>
-  <url>
-    <loc>http://bugs8.v6.army/2023/077450a446/</loc>
-    <lastmod>2023-08-01</lastmod>
-  </url>
-  <url>
-    <loc>http://bugs8.v6.army/2023/07e4efb9d7/</loc>
-    <lastmod>2023-08-01</lastmod>
-  </url>
-  <url>
-    <loc>http://bugs8.v6.army/2023/076a8f01b5/</loc>
-    <lastmod>2023-08-01</lastmod>
-  </url>
-  <url>
-    <loc>http://bugs8.v6.army/2023/077de6e86d/</loc>
-    <lastmod>2023-08-01</lastmod>
-  </url>
-  <url>
-    <loc>http://bugs8.v6.army/2023/07e3827dce/</loc>
-    <lastmod>2023-08-01</lastmod>
   </url>
 </urlset> 
