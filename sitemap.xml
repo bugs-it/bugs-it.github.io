@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://bugs8.v6.army/contact/index.html</loc>
+    
+    <lastmod>2023-08-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://bugs8.v6.army/2023/07e3827dce/</loc>
     
     <lastmod>2023-08-04</lastmod>
@@ -131,15 +140,6 @@
     <loc>https://bugs8.v6.army/Code/index.html</loc>
     
     <lastmod>2023-08-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://bugs8.v6.army/contact/index.html</loc>
-    
-    <lastmod>2023-07-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
