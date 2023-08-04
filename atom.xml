@@ -6,7 +6,7 @@
   <link href="http://bugs8.v6.army/atom.xml" rel="self"/>
   
   <link href="http://bugs8.v6.army/"/>
-  <updated>2023-08-04T01:27:40.639Z</updated>
+  <updated>2023-08-04T02:20:01.939Z</updated>
   <id>http://bugs8.v6.army/</id>
   
   <author>
@@ -21,14 +21,14 @@
     <link href="http://bugs8.v6.army/2023/08e5301835/"/>
     <id>http://bugs8.v6.army/2023/08e5301835/</id>
     <published>2023-08-04T00:30:00.000Z</published>
-    <updated>2023-08-04T01:27:40.639Z</updated>
+    <updated>2023-08-04T02:20:01.939Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;搜索-CSP-J-和DP-CSP-S&quot;&gt;&lt;a href=&quot;#搜索-CSP-J-和DP-CSP-S&quot; class=&quot;headerlink&quot; title=&quot;搜索(CSP-J)和DP(CSP-S)&quot;&gt;&lt;/a&gt;搜索(CSP-J)和DP(CSP-S)&lt;/h2&gt;&lt;h3</summary>
+    <summary type="html">&lt;h2 id=&quot;二分查找-CSP-J-和DP-CSP-S&quot;&gt;&lt;a href=&quot;#二分查找-CSP-J-和DP-CSP-S&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -50,10 +50,10 @@
     <link href="http://bugs8.v6.army/2023/087b548d96/"/>
     <id>http://bugs8.v6.army/2023/087b548d96/</id>
     <published>2023-08-03T00:30:00.000Z</published>
-    <updated>2023-08-03T03:21:38.240Z</updated>
+    <updated>2023-08-04T02:19:08.758Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;结构体-CSP-J-和队列、二叉排序树-CSP-S&quot;&gt;&lt;a href=&quot;#结构体-CSP-J-和队列、二叉排序树-CSP-S&quot; class=&quot;headerlink&quot; title=&quot;结构体(CSP-J)和队列、二叉排序树(CSP-S)&quot;&gt;&lt;/a&gt;结构体(CSP-J)和队列、二叉排序树(CSP-S)&lt;/h2&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;结构体-CSP-J-和队列、二叉排序树、单调队列-CSP-S&quot;&gt;&lt;a href=&quot;#结构体-CSP-J-和队列、二叉排序树、单调队列-CSP-S&quot; class=&quot;headerlink&quot; title=&quot;结构体(CSP-J)和队列、二叉排序树、单调队列(CSP-S)&quot;&gt;&lt;/a&gt;结构体(CSP-J)和队列、二叉排序树、单调队列(CSP-S)&lt;/h2&gt;</summary>
     
     
     
@@ -217,7 +217,7 @@
     <link href="http://bugs8.v6.army/2023/07e3827dce/"/>
     <id>http://bugs8.v6.army/2023/07e3827dce/</id>
     <published>2023-07-25T00:30:00.000Z</published>
-    <updated>2023-08-04T00:49:42.049Z</updated>
+    <updated>2023-08-04T02:15:31.469Z</updated>
     
     
     <summary type="html">&lt;p&gt;PS: This is a note.&lt;/p&gt;
