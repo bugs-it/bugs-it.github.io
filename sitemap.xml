@@ -2,9 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://bugs8.v6.army/friends/index.html</loc>
+    
+    <lastmod>2023-08-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://bugs8.v6.army/contact/index.html</loc>
     
-    <lastmod>2023-08-04</lastmod>
+    <lastmod>2023-08-05</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -12,15 +21,6 @@
   
   <url>
     <loc>https://bugs8.v6.army/2023/07e3827dce/</loc>
-    
-    <lastmod>2023-08-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://bugs8.v6.army/friends/index.html</loc>
     
     <lastmod>2023-08-04</lastmod>
     
@@ -184,7 +184,7 @@
 
   <url>
     <loc>https://bugs8.v6.army/</loc>
-    <lastmod>2023-08-04</lastmod>
+    <lastmod>2023-08-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -192,21 +192,21 @@
   
   <url>
     <loc>https://bugs8.v6.army/tags/Node-js/</loc>
-    <lastmod>2023-08-04</lastmod>
+    <lastmod>2023-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bugs8.v6.army/tags/Hexo/</loc>
-    <lastmod>2023-08-04</lastmod>
+    <lastmod>2023-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bugs8.v6.army/tags/c/</loc>
-    <lastmod>2023-08-04</lastmod>
+    <lastmod>2023-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -215,35 +215,35 @@
   
   <url>
     <loc>https://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</loc>
-    <lastmod>2023-08-04</lastmod>
+    <lastmod>2023-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2023-08-04</lastmod>
+    <lastmod>2023-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AE%89%E8%A3%85/</loc>
-    <lastmod>2023-08-04</lastmod>
+    <lastmod>2023-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/c/</loc>
-    <lastmod>2023-08-04</lastmod>
+    <lastmod>2023-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bugs8.v6.army/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/%E5%AE%89%E8%A3%85/Node-js/</loc>
-    <lastmod>2023-08-04</lastmod>
+    <lastmod>2023-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
